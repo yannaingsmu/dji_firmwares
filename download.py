@@ -9,7 +9,7 @@ def download(url,dest):
 
 
 
-data = pd.read_csv('./supported_firmwares_xv4.csv')
+data = pd.read_csv('./dji_firmware_collection.csv')
 link = data.download_link.tolist()
 name = data.download_name.tolist()
 
