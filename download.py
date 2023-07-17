@@ -11,7 +11,7 @@ def download(url,dest):
 
 data = pd.read_csv('./dji_firmware_collection.csv')
 link = data.download_link.tolist()
-name = data.download_name.tolist()
+name = data.file_name.tolist()
 
 for x,y in zip(link,name):
    
